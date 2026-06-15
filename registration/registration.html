@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoPeter</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img class="logo" src="../pictures/Логотип.png" alt="Логотип"></a>
+    </header>
+
+    <form class="registration" id="registration">
+        <h1 style="color:whitesmoke">ФОРМА РЕГИСТАЦИИ</h1>
+
+        <div class="left">
+
+        <label style="color:whitesmoke">Имя</label></br>
+        <input type="text" size="50" name="name" id="name"/></br>
+
+        <label style="color:whitesmoke">E-mail</label></br>
+        <input type="email" size="50" name="email" id="email"/></br>
+
+        <label style="color:whitesmoke">Пол</label></br>
+        <select name="gender">
+        <option value="female">Предпочитаю не говорить</option>
+        <option value="male">Женский</option>
+        <option value="other">Мужской</option>
+        </select></br>
+
+        </div>
+
+        <div class="right">
+
+        <label style="color:whitesmoke">Фамилия</label>
+        <input type="text" size="50" name="surname" id="surname"/></br>
+
+        <label style="color:whitesmoke">Пароль</label></br>
+        <input type="password" size="50" name="password" id="password"/></br>
+
+        <button type="submit">Отправить</button>
+        
+        </div>
+        
+    </form>
+    <script src="validation.js"></script>
+</body>
+</html>

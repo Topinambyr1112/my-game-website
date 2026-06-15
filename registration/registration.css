@@ -1,0 +1,117 @@
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+body {
+   background: linear-gradient(135deg, #e4efe9 0%, #93a5cf 100%);
+   background-attachment: fixed;
+}
+.logo {
+    width: auto;
+    height: auto;
+    max-height: 45px;
+}
+.registration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 50px;
+    padding: 10%;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+input {
+    background: linear-gradient(135deg, #e4efe9 0%, #93a5cf 100%);
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+select {
+    background: linear-gradient(135deg, #e4efe9 0%, #93a5cf 100%);
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+h1 {
+    width: 100%;
+    font-size: 60px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: -15%;
+}
+label {
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+.left {
+    width: 45%;
+    text-align: center;
+}
+.right {
+    width: 45%;
+    text-align: center;
+}
+button {
+    background: linear-gradient(135deg, #e4efe9 0%, #93a5cf 100%);
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    margin-bottom: 5%;
+    border-radius: 100px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+@media (max-width: 992px) {
+.logo {
+    max-width: 70px;
+}
+.registration {
+    width: 80%;
+    height: 300px;
+    margin-top: 50%;
+}
+input {
+    background: linear-gradient(135deg, #e4efe9 0%, #93a5cf 100%);
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 20%;
+}
+select {
+    background: linear-gradient(135deg, #e4efe9 0%, #93a5cf 100%);
+    width: 100%;
+    height: 30px;
+    font-size: 10px;
+    margin-bottom: 20%;
+}
+h1 {
+    font-size: 23px;
+    margin-top: 0%;
+    margin-bottom: 15%;
+}
+label {
+    font-size: 20px;
+}
+.right {
+    margin-left: 50% ;
+    margin-top: -92%;
+}
+button {
+    background: linear-gradient(135deg, #e4efe9 0%, #93a5cf 100%);
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+}

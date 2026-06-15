@@ -1,0 +1,153 @@
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+}
+body {
+   background: linear-gradient(135deg, #e4efe9 0%, #93a5cf 100%);
+   background-attachment: fixed;
+}
+.logo {
+    width: auto;
+    height: auto;
+    max-height: 45px;
+}
+.entrance {
+    width: auto;
+    height: auto;
+    max-height: 35px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 40px;
+}
+.Куда, .Кому {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+    background-color: black;
+    padding: 15px 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+}
+.Куда:hover, .Кому:hover {
+   transform: scale(1.05);
+}
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    width: 95%;
+}
+.card_first, .card_second, .card_third {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    max-width: 420px;
+    background-color: white;
+}
+.PancakeHouse, .Nevskiy, .NewHolland {
+   width: 100%;
+   height: auto;
+   border: outset 5px;
+   aspect-ratio: 4 / 3;
+   object-fit: cover;
+   mix-blend-mode: normal;
+   display: block;
+}
+.main_first, .main_second, .main_third {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 380px; 
+    border: outset 5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+dl {
+    list-style-type: none;
+    text-align: center;
+}
+.title {
+    font-family: fantasy;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+li {
+    font-family: monospace;
+    font-size: 15px;
+    list-style-type: none;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .logo, .entrance {
+        max-width: 70px;
+    }
+    .button {
+        gap: 20px;
+        padding: 0 15px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .Куда, .Кому {
+        font-size: 24px;
+        padding: 12px 10px;
+        border-radius: 40px;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 0 10px;
+        margin: 20px auto;
+        align-items: start;
+    }
+    .card_first, .card_second, .card_third {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card_first {
+        grid-column: 1;
+    }
+    .card_second {
+        grid-column: 2;
+        margin-top: 130px;
+    }
+    .card_third {
+        grid-column: 1;
+        margin-top: -60px;
+    }
+    .PancakeHouse, .Nevskiy, .NewHolland {
+        height: 130px;
+        width: 100%;
+        border: outset 6px;
+        border-bottom: none;
+        box-sizing: border-box;
+    }
+    .main_first, .main_second, .main_third {
+        height: auto;
+        width: 100%;
+        padding: 12px 8px;
+        border: outset 6px;
+        border-top: none;
+        box-sizing: border-box;
+    }
+    .title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    li {
+        font-size: 11px;
+        text-align: center;
+    }
+}
